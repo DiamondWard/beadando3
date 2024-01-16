@@ -1,0 +1,108 @@
+*{
+    text-decoration: none;
+}
+h1{
+    color: lightgreen;
+}
+
+body{
+    background-color: rgb(98, 157, 102);
+    background-image: url(bg.png);
+    background-repeat: repeat-x;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    padding-top: 2vw;
+}
+main{
+    border: 1px solid black;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+    background-color: rgb(98, 157, 102);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    'h h'
+    'n n'
+    'ar as'
+    'f f'
+    ;
+}
+header{
+    grid-area: h;
+    text-align: center;
+    border: 1px black solid;
+    background-image: url(bg.png);
+}
+nav li{
+    padding: 2vw;
+    display: inline;
+    font-size: 22px;
+}
+a:hover {
+    background-color: rgb(57, 94, 62);
+    border-radius: 3px;
+    color: white;
+}
+nav{
+    grid-area: n;
+    border: 1px black solid
+}
+article{
+    grid-area: ar;
+    font-size: 20px;
+    border: 1px black solid;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+aside{
+    grid-area: as;
+    border: 1px black solid
+}
+aside p{
+    text-align: center;
+    font-size: 12px;
+}
+footer{
+    grid-area: f;
+    text-align: center;
+    background: rgb(57, 94, 62);
+    border: 1px solid black;
+    
+}
+
+@media all and (max-width: 600px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'h'
+        'n'
+        'ar'
+        'as'
+        'f'
+        ;
+     }
+}
+
+#kep1{
+    display: block;
+    margin: 0 auto;
+    height: 350px;
+    width: auto;
+}
+#kep2{
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    width: auto;
+
+}
+#kep3{
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    width: auto;
+
+}
